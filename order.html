@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="نموذج طلب تجريبي يتضمن حقول HTML وJavaScript للتحقق وحساب قيمة الطلب.">
+  <meta name="theme-color" content="#263f31">
+  <title>نموذج الطلب | Smart Healthy Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand-mark.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">انتقلي إلى المحتوى</a>
+<div class="topline"><span>طعام متوازن، بطابع متوسطي</span><span>قائمة تجريبية لمشروع دراسي</span></div>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Smart Healthy Food — الرئيسية"><span class="brand-mark" aria-hidden="true"><i></i></span><span class="brand-name"><strong>Smart Healthy Food</strong><small>مطعم الوجبات الصحية</small></span></a>
+  <nav class="site-nav" aria-label="التنقل الرئيسي"><ul><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li><li><a href="nutrition.html">القيم الغذائية</a></li><li><a href="order.html" class="is-current" aria-current="page">اطلب الآن</a></li><li><a href="calculator.html">حاسبة الطلب</a></li><li><a href="bowls.html">الأطباق</a></li><li><a href="salads.html">السلطات</a></li><li><a href="wraps.html">اللفائف</a></li><li><a href="breakfast.html">الإفطار</a></li><li><a href="smoothies.html">المشروبات</a></li><li><a href="plans.html">الباقات</a></li></ul></nav>
+</header>
+<main id="main" class="page-main"><header class="page-heading"><p class="eyebrow">خطوة واحدة إلى وجبتك المفضلة</p><h1>نموذج الطلب</h1><p class="page-lead">املئي الحقول لتجربة التحقق والحساب. هذا النموذج تعليمي فقط، ولا يرسل معلوماتك أو يحفظها.</p></header>
+<section class="order-layout"><form id="order-form" class="order-form" novalidate>
+  <div class="form-intro"><span class="step-number">01</span><div><h2>تفاصيل الطلب</h2><p>الحقول ذات العلامة * مطلوبة للتجربة.</p></div></div>
+  <div class="form-grid"><label class="field"><span>الاسم الكامل <b>*</b></span><input name="customerName" id="customer-name" type="text" placeholder="مثال: سارة أحمد" autocomplete="name"></label>
+  <label class="field"><span>رقم التواصل <b>*</b></span><input name="phone" id="customer-phone" type="text" inputmode="tel" placeholder="05xxxxxxxx" autocomplete="tel"></label>
+  <label class="field field-wide"><span>كلمة مرور تجريبية <b>*</b></span><input name="password" id="demo-password" type="password" placeholder="للتوضيح الدراسي فقط" autocomplete="new-password"><small>لا تستخدمي كلمة مرور حقيقية؛ هذا النموذج لا يسجل الدخول.</small></label>
+  <label class="field field-wide"><span>اختاري وجبتك <b>*</b></span><select name="item" id="order-item"><option value="" data-price="0">اختاري من القائمة</option><option value="grain-bowl" data-price="36">طبق الحبوب والدجاج — 36 ر.س</option><option value="garden-salad" data-price="29">سلطة الحديقة — 29 ر.س</option><option value="chicken-wrap" data-price="31">لفافة الدجاج والخضار — 31 ر.س</option><option value="avocado-toast" data-price="22">توست الأفوكادو — 22 ر.س</option><option value="berry-smoothie" data-price="19">سموذي التوت — 19 ر.س</option><option value="weekly-plan" data-price="135">باقة أسبوع متوازن — 135 ر.س</option></select></label>
+  <label class="field"><span>الكمية <b>*</b></span><input name="quantity" id="order-quantity" type="number" min="1" max="20" value="1"></label>
+  <label class="field"><span>المدينة</span><input name="city" id="customer-city" type="text" placeholder="المدينة"></label>
+  <label class="field field-wide"><span>العنوان للتوصيل <b>*</b></span><input name="address" id="delivery-address" type="text" placeholder="الحي والشارع"></label>
+  <label class="field field-wide"><span>ملاحظات أو تفضيلات</span><textarea name="notes" id="order-notes" rows="4" placeholder="أضيفي ملاحظة أو اتركي الحقل فارغاً"></textarea></label></div>
+  <div class="order-total"><span>الإجمالي التقديري</span><output id="order-total" aria-live="polite">اختاري وجبة لحساب الإجمالي</output></div>
+  <button class="button button-primary form-submit" type="submit">تحقق من الطلب</button><p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+</form><aside class="order-aside"><div class="aside-photo"><img src="/manus-storage/grain-bowl_0be4c83b.jpg" data-fallback="assets/images/grain-bowl.jpg" alt="طبق صحي من الحبوب والخضروات" loading="lazy"></div><p class="eyebrow">طلب تجريبي</p><h2>اختاري، ثم احسبي.</h2><p>سيحسب الموقع سعر الوجبة مضروباً في الكمية. لا يوجد دفع أو إرسال فعلي.</p><a class="text-link" href="nutrition.html">راجعي تفاصيل الوجبات ←</a></aside></section></main>
+<footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i></span><span class="brand-name"><strong>Smart Healthy Food</strong><small>مطعم الوجبات الصحية</small></span></a><p>نكهات بسيطة، ومعلومات واضحة، وتجربة تعليمية متكاملة.</p></div><div class="footer-links"><h2>روابط الموقع</h2><ul><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li><li><a href="nutrition.html">القيم الغذائية</a></li><li><a href="order.html" class="is-current" aria-current="page">اطلب الآن</a></li><li><a href="calculator.html">حاسبة الطلب</a></li><li><a href="bowls.html">الأطباق</a></li><li><a href="salads.html">السلطات</a></li><li><a href="wraps.html">اللفائف</a></li><li><a href="breakfast.html">الإفطار</a></li><li><a href="smoothies.html">المشروبات</a></li><li><a href="plans.html">الباقات</a></li></ul></div><div class="footer-note"><h2>تنويه</h2><p>موقع تجريبي لمادة تطوير تطبيقات الأجهزة الذكية. الأسعار والقيم الغذائية أمثلة تعليمية وليست معلومات طبية.</p></div></div><div class="footer-bottom"><span>Smart Healthy Food</span><span>HTML · CSS · JavaScript</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "الرئيسية"
+    },
+    {
+      "path": "/about.html",
+      "title": "من نحن"
+    },
+    {
+      "path": "/nutrition.html",
+      "title": "القيم الغذائية"
+    },
+    {
+      "path": "/order.html",
+      "title": "نموذج الطلب"
+    },
+    {
+      "path": "/calculator.html",
+      "title": "حاسبة الطلب"
+    },
+    {
+      "path": "/bowls.html",
+      "title": "الأطباق"
+    },
+    {
+      "path": "/salads.html",
+      "title": "السلطات"
+    },
+    {
+      "path": "/wraps.html",
+      "title": "اللفائف"
+    },
+    {
+      "path": "/breakfast.html",
+      "title": "الإفطار"
+    },
+    {
+      "path": "/smoothies.html",
+      "title": "المشروبات"
+    },
+    {
+      "path": "/plans.html",
+      "title": "الباقات"
+    }
+  ]
+}

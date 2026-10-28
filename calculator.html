@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="حاسبة بسيطة لتقدير سعر الطعام وحلقة JavaScript تعرض اقتراحات إضافية.">
+  <meta name="theme-color" content="#263f31">
+  <title>حاسبة الطلب | Smart Healthy Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand-mark.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">انتقلي إلى المحتوى</a>
+<div class="topline"><span>طعام متوازن، بطابع متوسطي</span><span>قائمة تجريبية لمشروع دراسي</span></div>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Smart Healthy Food — الرئيسية"><span class="brand-mark" aria-hidden="true"><i></i></span><span class="brand-name"><strong>Smart Healthy Food</strong><small>مطعم الوجبات الصحية</small></span></a>
+  <nav class="site-nav" aria-label="التنقل الرئيسي"><ul><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li><li><a href="nutrition.html">القيم الغذائية</a></li><li><a href="order.html">اطلب الآن</a></li><li><a href="calculator.html" class="is-current" aria-current="page">حاسبة الطلب</a></li><li><a href="bowls.html">الأطباق</a></li><li><a href="salads.html">السلطات</a></li><li><a href="wraps.html">اللفائف</a></li><li><a href="breakfast.html">الإفطار</a></li><li><a href="smoothies.html">المشروبات</a></li><li><a href="plans.html">الباقات</a></li></ul></nav>
+</header>
+<main id="main" class="page-main"><header class="page-heading"><p class="eyebrow">تفاعل بسيط بلغة JavaScript</p><h1>حاسبة طلبك</h1><p class="page-lead">اختاري وجبة وحددي الكمية، ثم احسبي السعر التقريبي. يتغير الناتج مباشرة داخل الصفحة.</p></header>
+<section class="calculator-panel"><div class="calc-copy"><span class="step-number">02</span><h2>كم وجبة في طلبك؟</h2><p>السعر الإجمالي = سعر الوجبة × الكمية. الأسعار هنا أمثلة دراسية قابلة للتعديل.</p><form id="calculator-form" class="calculator-form" novalidate><label class="field"><span>نوع الوجبة</span><select id="calc-item"><option value="" data-price="0">اختاري وجبة</option><option value="grain-bowl" data-price="36">طبق الحبوب والدجاج</option><option value="garden-salad" data-price="29">سلطة الحديقة</option><option value="chicken-wrap" data-price="31">لفافة الدجاج والخضار</option><option value="avocado-toast" data-price="22">توست الأفوكادو</option><option value="berry-smoothie" data-price="19">سموذي التوت</option><option value="weekly-plan" data-price="135">باقة أسبوع متوازن</option></select></label><label class="field"><span>الكمية</span><input id="calc-quantity" type="number" min="1" max="20" value="1"></label><button type="submit" class="button button-primary">احسبي الإجمالي</button></form><p id="calc-status" class="form-status" role="status" aria-live="polite"></p></div><div class="calc-result-card"><p class="eyebrow">إجمالي تقديري</p><output id="calc-total" aria-live="polite">—</output><p>ر.س</p><div class="calc-doodle" aria-hidden="true"><span></span><span></span><span></span></div></div></section>
+<section class="section-block suggestions-section"><div class="section-heading"><p class="eyebrow">توليد تلقائي بحلقة for</p><h2>اقتراحات اليوم</h2><p>يعرض JavaScript مجموعة خيارات قصيرة عند تحميل الصفحة.</p></div><ul id="suggestion-list" class="suggestion-list"><li>تُحمّل الاقتراحات عند تفعيل JavaScript.</li></ul><noscript><p class="notice">فعّلي JavaScript لعرض الاقتراحات وتشغيل الحاسبة.</p></noscript></section>
+<section class="mini-callout"><div><p class="eyebrow">جاهزة للخطوة التالية؟</p><h2>جرّبي نموذج الطلب</h2></div><a class="button button-primary" href="order.html">افتحي النموذج</a></section></main>
+<footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i></span><span class="brand-name"><strong>Smart Healthy Food</strong><small>مطعم الوجبات الصحية</small></span></a><p>نكهات بسيطة، ومعلومات واضحة، وتجربة تعليمية متكاملة.</p></div><div class="footer-links"><h2>روابط الموقع</h2><ul><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li><li><a href="nutrition.html">القيم الغذائية</a></li><li><a href="order.html">اطلب الآن</a></li><li><a href="calculator.html" class="is-current" aria-current="page">حاسبة الطلب</a></li><li><a href="bowls.html">الأطباق</a></li><li><a href="salads.html">السلطات</a></li><li><a href="wraps.html">اللفائف</a></li><li><a href="breakfast.html">الإفطار</a></li><li><a href="smoothies.html">المشروبات</a></li><li><a href="plans.html">الباقات</a></li></ul></div><div class="footer-note"><h2>تنويه</h2><p>موقع تجريبي لمادة تطوير تطبيقات الأجهزة الذكية. الأسعار والقيم الغذائية أمثلة تعليمية وليست معلومات طبية.</p></div></div><div class="footer-bottom"><span>Smart Healthy Food</span><span>HTML · CSS · JavaScript</span></div></footer>
+</body>
+</html>
